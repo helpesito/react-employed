@@ -1,24 +1,22 @@
-.campo_texto{
-    margin: 24px 0;
-    font-family: 'montserrat', sans-serif;
-}
-
-.campo_texto label{
-    font-family: 'montserrat', sans-serif;
-    font-size: 18px;
+.lista_opciones label {
+    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
+    font-size: 18px;
     display: block;
     margin-bottom: 8px;
 }
 
-.campo_texto input{
+.lista_opciones select {
     width: 100%;
     background-color: #ffffff;
     box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.06);
+    padding: 24px;
     border: none;
-    padding: 30px 20px;
     outline-color: #6278F7;
     font-size: 16px;
-    box-sizing: border-box;
 }
 
+.lista_opciones select:hover{
+    border: 2px solid  #6278F7;
+    border: 15px;
+}
