@@ -1,12 +1,24 @@
+import { useState } from "react"
 import "./CampoTexto.css"
 
 const CampoTexto = (props) => {
-    console.log("Datos: ", props.titulo)
+
     const placeholderMod = `${props.placeholder}...`
+    
+    const manejarCambio = (evento) =>{
+        props.setValor(evento.target.value)
+    }
+    
     return <div className="campo_texto">
         <label>{props.titulo}</label>
-        <input type="" placeholder={placeholderMod}/>
-    </div>
+        <input 
+            type="" 
+            placeholder={placeholderMod} 
+            required={props.required} 
+            value={props.valor}
+            onChange={manejarCambio} 
+            />
+    </div> 
 }
 
 export default CampoTexto
