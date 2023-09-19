@@ -1,12 +1,11 @@
-import { useState } from "react"
 import "./CampoTexto.css"
 
 const CampoTexto = (props) => {
 
     const placeholderMod = `${props.placeholder}...`
     
-    const manejarCambio = (evento) =>{
-        props.setValor(evento.target.value)
+    const manejarCambio = (e) =>{
+        props.setValor(e.target.value)
     }
     
     return <div className="campo_texto">

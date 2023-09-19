@@ -3,9 +3,8 @@ import "./Formulario.css"
 import CampoTexto from "../CampoTexto";
 import ListaOpciones from "../ListaOpciones/ListaOpciones";
 import Boton from "../Boton";
-import { getValue } from "@testing-library/user-event/dist/utils";
 
-const Formulario = () => {
+const Formulario = (props) => {
 
     const [nombre,setNombre] = useState("")
     const [puesto,setPuesto] = useState("")
@@ -52,7 +51,8 @@ const Formulario = () => {
                 
             <ListaOpciones 
                 valor={equipo} 
-                setValor={setEquipo}/>
+                setValor={setEquipo}
+                equipos={props.equipos}/>
             <Boton>
                 crear
             </Boton>
