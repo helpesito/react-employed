@@ -10,7 +10,7 @@ const Colaborador = (props) =>{
         </div>
         <div className="info">
             <h4>{nombre}</h4>
-            <h5>{puesto}r</h5>
+            <h5>{puesto}</h5>
         </div>
     </div>
 }
