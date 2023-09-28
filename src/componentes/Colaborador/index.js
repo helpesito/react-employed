@@ -6,7 +6,7 @@ const Colaborador = (props) =>{
     const {colorPrimario} = props
     return <div className="colaborador">
         <div className="encabezado" style={{background: colorPrimario}}>
-            <img src={foto} alt={nombre}/>
+            <img src={foto} alt={nombre} />
         </div>
         <div className="info">
             <h4>{nombre}</h4>
